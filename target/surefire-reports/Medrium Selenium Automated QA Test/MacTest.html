@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  MacTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MacTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 23 15:36:33 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16889 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.deleteDaySheetTemplate()'><b>deleteDaySheetTemplate</b><br>Test class: com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate<br>Test method: Test for Verify delete day sheet template <br>Parameters: localhost, 4444, *firefox, https://108.161.43.79:8443/, US2000</td>
+<td><div><pre>java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&lt;true&gt; but was:&lt;false&gt;
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.daySheetTemplate(DeleteDaySheetTemplate.java:70)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.deleteDaySheetTemplate(DeleteDaySheetTemplate.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2170432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2170432'><pre>java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.daySheetTemplate(DeleteDaySheetTemplate.java:70)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.deleteDaySheetTemplate(DeleteDaySheetTemplate.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+</pre></div></td>
+<td>9</td>
+<td>com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate@12a4674</td></tr>
+<tr>
+<td title='com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.editDaySheetTemplate()'><b>editDaySheetTemplate</b><br>Test class: com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate<br>Test method: Test for Verify edit day sheet template <br>Parameters: localhost, 4444, *firefox, https://108.161.43.79:8443/, US2000</td>
+<td><div><pre>java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&lt;true&gt; but was:&lt;false&gt;
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.daySheetTemplate(EditDaySheetTemplate.java:94)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.editDaySheetTemplate(EditDaySheetTemplate.java:23)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32018612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32018612'><pre>java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.daySheetTemplate(EditDaySheetTemplate.java:94)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.editDaySheetTemplate(EditDaySheetTemplate.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:640)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:627)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:799)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+</pre></div></td>
+<td>7</td>
+<td>com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate@7783ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.AddDaySheetTemplate.addDaySheetTemplate()'><b>addDaySheetTemplate</b><br>Test class: com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.AddDaySheetTemplate<br>Test method: Test for Verify Add day sheet template <br>Parameters: localhost, 4444, *firefox, https://108.161.43.79:8443/, US2000</td>
+<td></td>
+<td>0</td>
+<td>com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.AddDaySheetTemplate@1796649</td></tr>
+<tr>
+<td title='com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInDaySheetTemplate.verifyCancelInDaySheetTemplate()'><b>verifyCancelInDaySheetTemplate</b><br>Test class: com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInDaySheetTemplate<br>Test method: Test for Verify cancel in day sheet template <br>Parameters: localhost, 4444, *firefox, https://108.161.43.79:8443/, US2000</td>
+<td></td>
+<td>0</td>
+<td>com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInDaySheetTemplate@75863f</td></tr>
+<tr>
+<td title='com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInPrintCalendarReport.verifyCancelInPrintCalendarReport()'><b>verifyCancelInPrintCalendarReport</b><br>Test class: com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInPrintCalendarReport<br>Test method: Test for Verify 'cancel' in print calendar report<br>Parameters: localhost, 4444, *firefox, https://108.161.43.79:8443/, US2000</td>
+<td></td>
+<td>0</td>
+<td>com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInPrintCalendarReport@1c0c8b3</td></tr>
+</table><p>
+</body>
+</html>

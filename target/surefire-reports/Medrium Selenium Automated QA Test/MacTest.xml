@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MacTest" failures="2" tests="5" time="16.889" errors="0">
+  <properties/>
+  <testcase name="verifyCancelInDaySheetTemplate" time="0.43" classname="com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInDaySheetTemplate"/>
+  <testcase name="editDaySheetTemplate" time="7.351" classname="com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate">
+    <failure type="java.lang.AssertionError" message="Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:<true> but was:<false>
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.daySheetTemplate(EditDaySheetTemplate.java:94)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.EditDaySheetTemplate.editDaySheetTemplate(EditDaySheetTemplate.java:23)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="verifyCancelInPrintCalendarReport" time="0.008" classname="com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.VerifyCancelInPrintCalendarReport"/>
+  <testcase name="deleteDaySheetTemplate" time="9.045" classname="com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate">
+    <failure type="java.lang.AssertionError" message="Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: Failed Due to the Exception; 
+	*) ExceptionDetails :Could not contact Selenium Server; have you started it?
+Connection refused: connect
+	*) expected:<true> but was:<false>
+	at com.sharedlibrary.AbstractTest.fail(AbstractTest.java:2159)
+	at com.sharedlibrary.AbstractTest.failNotEquals(AbstractTest.java:2155)
+	at com.sharedlibrary.AbstractTest.assertTrue(AbstractTest.java:2067)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.daySheetTemplate(DeleteDaySheetTemplate.java:70)
+	at com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.DeleteDaySheetTemplate.deleteDaySheetTemplate(DeleteDaySheetTemplate.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="addDaySheetTemplate" time="0.006" classname="com.nexia.selenium.testscripts.section.templateSetup.daySheetTemplate.AddDaySheetTemplate"/>
+</testsuite>
