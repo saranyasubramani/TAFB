@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EBS-1">
+  
+    <test name="EBS">
+    <packages>
+      <package name="com.ebs.test.functional.Ebs"/>
+    </packages>
+	</test>
+    
+ 
+</suite> <!-- [EBS Selenium Automated QA Test]] -->

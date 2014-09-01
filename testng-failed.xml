@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Failed suite]">
+  
+  <test name="Nexia(failed)(failed)">
+    <classes>
+      <class name="com.ebs.test.functional.Ebs.EbsLoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> 
+    </classes>
+  </test> 
+</suite> 
